@@ -1,0 +1,14 @@
+.information__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  margin-bottom: 10px;
+  color: #0f1111;
+  .label {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .value {
+    font-size: 14px;
+  }
+}

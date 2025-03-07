@@ -1,0 +1,45 @@
+.reviews__container {
+  padding: 10px;
+
+  .user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+
+    p {
+      margin-left: 4px;
+    }
+    .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid #e0e0e0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .email,
+  .reviewed {
+    font-size: 14px;
+    color: rgb(103 103 103);
+  }
+
+  .review {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 20px;
+    }
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .comment {
+    margin-top: 20px;
+  }
+}
