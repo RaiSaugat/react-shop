@@ -5,14 +5,6 @@ import { LIMIT } from '../utils/constants';
 
 const BASE_URL = 'https://dummyjson.com/products';
 
-export const getAllProducts = async (): Promise<ProductsResponse> => {
-  const response = await fetch(BASE_URL);
-  if (!response.ok) {
-    throw new Error('Failed to fetch products');
-  }
-  return await response.json();
-};
-
 export const getProductsByPage = async (
   skip: number
 ): Promise<ProductsResponse> => {

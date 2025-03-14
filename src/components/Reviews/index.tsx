@@ -10,9 +10,9 @@ function Reviews({ reviews }: { reviews: Review[] }) {
     <div id="reviews">
       <h3>Ratings & Reviews</h3>
       <div className="reviews__container">
-        {reviews.map((review) => {
+        {reviews.map((review, index) => {
           return (
-            <div className="review">
+            <div className="review" key={review.date + index}>
               <div className="user">
                 <div className="avatar">{getInitials(review.reviewerName)}</div>
                 <p>
